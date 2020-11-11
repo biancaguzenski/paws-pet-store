@@ -1,0 +1,22 @@
+.image-carousel{
+    object-fit: cover; /* how image behaves inside the container: div */
+    object-position: 0 30%;
+    height: 400px;
+}
+
+.title-general{
+    font-family: 'Staatliches', cursive;
+}
+
+.color_titles{
+    color: darkred;
+}
+
+.color_buttons{
+    background-color: darkred;
+    color: white;
+}
+
+.card_border{
+    border-color: darkred;
+}
