@@ -20,3 +20,16 @@
 .card_border{
     border-color: darkred;
 }
+
+.general_text{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card_image{
+    object-fit: cover;
+    height: 200px;
+}
+
+.card_width{
+    width: 18rem;
+}
