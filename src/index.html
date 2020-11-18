@@ -11,16 +11,15 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand title-general" href="#">paws pet store</a>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand title-general color_titles" href="#">paws pet store</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
           <ul class="navbar-nav general_text">
             <li><a class="nav-link active" href="#">home<span class="sr-only">(current)</span></a></li>
-            <li><a class="nav-link" href="#">produtos</a></li>
-            <li><a class="nav-link" href="#">contato</a></li>
+            <li><a class="nav-link" href="#" data-toggle="modal" data-target="#modal-contact">contato</a></li>
           </ul>
         </div>
       </nav>
@@ -71,45 +70,90 @@
         <p class="text-center text-secondary pb-5 general_text">Texto sobre a missão</p>
       </section>
 
-      <section id="services">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm">
-              <article class="card card_border card_width">
-                <img src="img/bath01.jpg" class="card-img-top card_image" alt="Dois cachorros tomando banho">
-                <div class="card-body">
-                  <h5 class="card-title">Banho & Tosa</h5>
-                  <p class="card-text general_text">Seu cãozinho tem a disposição os melhores serviços: banho, tosa, tosa higiênica, hidratação e mais!</p>
-                  <a href="#" class="btn color_buttons general_text">Agendar horário</a>
-                </div>
-              </article>
-            </div>
-            <div class="col-sm">
-              <article class="card card_border card_width">
-                <img src="img/daycare1.jpg" class="card-img-top card_image" alt="Grupo de cachorros brincando">
-                <div class="card-body">
-                  <h5 class="card-title">Daycare & Hospedagem</h5>
-                  <p class="card-text general_text">Escrever algo aqui</p>
-                  <a href="#" class="btn color_buttons general_text">Entrar em contato</a>
-                </div>
-              </article>
-            </div>
-            <div class="col-sm">
-              <article class="card card_border card_width">
-                <img src="img/medicine.jpg" class="card-img-top card_image" alt="Cachorro observando medicamentos">
-                <div class="card-body">
-                  <h5 class="card-title">Farmácia Paws</h5>
-                  <p class="card-text general_text">Aplicação de vacinas, vermífugos, anti-pulgase muito mais pra saúde do seu melhor amigo!</p>
-                  <a href="#" class="btn color_buttons general_text">Entrar em contato</a>
-                </div>
-              </article>
-            </div>
+      <section id="services" class="bg-light pb-5">
+        <div class="container d-flex flex-wrap justify-content-md-around justify-content-center">
+            <article class="card card_border card_width p-0 m-4 col-12 col-md-4">
+              <img src="img/bath01.jpg" class="card-img-top card_image" alt="Dois cachorros tomando banho">
+              <div class="card-body">
+                <h5 class="card-title">Banho & Tosa</h5>
+                <p class="card-text general_text">Seu cãozinho tem a disposição os melhores serviços: banho, tosa, tosa higiênica, hidratação e mais!</p>
+                <a href="#" class="btn color_buttons general_text" data-toggle="modal" data-target="#modal-contact">Entrar em contato</a>
+              </div>
+            </article>
+            <article class="card card_border card_width p-0 m-4 col-12 col-md-4">
+              <img src="img/daycare1.jpg" class="card-img-top card_image" alt="Grupo de cachorros brincando">
+              <div class="card-body">
+                <h5 class="card-title">Daycare & Hospedagem</h5>
+                <p class="card-text general_text">Estrutura adaptada e atividades lúdicas e físicas, para estimular a mente e o físico dos cães.</p>
+                <a href="#" class="btn color_buttons general_text" data-toggle="modal" data-target="#modal-contact">Entrar em contato</a>
+              </div>
+            </article>
+            <article class="card card_border card_width p-0 m-4 col-12 col-md-4">
+              <img src="img/medicine.jpg" class="card-img-top card_image" alt="Cachorro observando medicamentos">
+              <div class="card-body">
+                <h5 class="card-title">Farmácia Paws</h5>
+                <p class="card-text general_text">Aplicação de vacinas, vermífugos, anti-pulgas e muito mais pra saúde do seu melhor amigo!</p>
+                <a href="#" class="btn color_buttons general_text" data-toggle="modal" data-target="#modal-contact">Entrar em contato</a>
+              </div>
+            </article>
           </div>
-        </div>    
+        </div>   
       </section>
     </main>  
-    <footer>
+  
 
+    <!-- Modal -->
+    <div class="modal fade general_text" id="modal-contact" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <dialog class="modal-content">
+          <header class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Entre em contato conosco</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </header>
+          <main class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Nome</label>
+                <input type="text" class="form-control" id="formGroupExampleInput">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Email</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">Gostaria de informações sobre</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>Banho e tosa</option>
+                  <option>Daycare</option>
+                  <option>Hospedágem</option>
+                  <option>Farmácia e atendimento veterinário</option>
+                  <option>Todas as opções</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Mensagem</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  Gostaria de receber e-mails com promoções e informações da Paws
+                </label>
+              </div>
+            </form>
+          </main>
+          <footer class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            <button type="button" class="btn color_buttons">Enviar</button>
+          </footer>
+        </dialog>
+      </div>
+    </div>
+
+    <footer class="bg-secondary p-3 text-light">
+      <p class="text-light m-0 general_text text-center">paws pet store 2020</p>
     </footer>       
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

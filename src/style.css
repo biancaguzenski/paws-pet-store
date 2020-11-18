@@ -9,7 +9,7 @@
 }
 
 .color_titles{
-    color: darkred;
+    color: darkred!important;
 }
 
 .color_buttons{
@@ -31,5 +31,5 @@
 }
 
 .card_width{
-    width: 18rem;
+    max-width: 18rem;
 }
