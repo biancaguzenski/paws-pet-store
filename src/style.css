@@ -33,3 +33,7 @@
 .card_width{
     max-width: 18rem;
 }
+
+.footer_background {
+    background-color: darkred;
+}
