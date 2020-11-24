@@ -34,6 +34,16 @@
     max-width: 18rem;
 }
 
-.footer_background {
+.footer{
     background-color: darkred;
+    color: whitesmoke;
+}
+
+
+.icons {
+    color: white;
+}
+.icons:hover {
+    cursor: pointer;
+    color: red;
 }
