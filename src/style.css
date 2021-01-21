@@ -1,6 +1,12 @@
 .image-carousel{
-    object-fit: cover; /* how image behaves inside the container: div */
+    object-fit: cover;
     object-position: 0 30%;
+    height: 400px;
+}
+
+.image-dogs {
+    object-fit: cover;
+    object-position: 0 10%;
     height: 400px;
 }
 
@@ -39,11 +45,13 @@
     color: whitesmoke;
 }
 
-
 .icons {
     color: white;
 }
 .icons:hover {
     cursor: pointer;
-    color: red;
+    color: rgb(180, 172, 172);
 }
+ .social_net {
+     height: 50% ;
+ }
