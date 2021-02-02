@@ -1,6 +1,6 @@
-## Paws Pet Store Landing Page.
+<h2 align="center"><a href="https://pawspetstore.netlify.app/">Paws Pet Store Landing Page </a></h2>
+<h5 align="center">uma landing page para uma pet shop fictícia</h5>
 
-- This project is still under development. I'm building this landing page for studying purposes only.  
 ---
 
 Technologies used:  
