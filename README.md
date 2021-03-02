@@ -3,7 +3,7 @@
 <h1 align="center">
   <img alt="pawspet" title="pawspet" src="src/img/main.png" />
 </h1>
----
+
 
 ## Technologies used:
 
